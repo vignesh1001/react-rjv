@@ -1,0 +1,58 @@
+/* unset list styles */
+
+.MainNavList {
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@media (min-width: 640px) {
+  .MainNavList {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+  }
+}
+
+/* unset link styles */
+
+.MainNavLink {
+  color: inherit;
+  display: block;
+  padding: 1.5em 0em 0.25em 0;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.ActiveMainNavLink {
+  color: var(--gray-dark-2);
+  display: block;
+  padding: 1.5em 0em 0.25em 0;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-shadow: inset 0 -2px 0 rgba(60, 118, 171, 1),
+    inset 0 -3px 0 rgba(60, 118, 171, 1);
+}
+
+.MainNavLink:hover {
+  box-shadow: inset 0 -2px 0 rgba(60, 118, 171, 1),
+    inset 0 -3px 0 rgba(60, 118, 171, 1);
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 721px) {
+  .MainNavList {
+    color: #fff;
+    text-align: center;
+  }
+  .ActiveMainNavLink {
+    color: #fff;
+    text-align: center;
+    box-shadow: none;
+    text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-line: underline;
+  }
+}

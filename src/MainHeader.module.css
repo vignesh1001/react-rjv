@@ -1,0 +1,205 @@
+.MainHeader {
+  margin-top: 30px;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.10196);
+  position: relative;
+}
+
+/* .menuHeader {
+  display: flex;
+  flex-flow: column;
+  float: left;
+  margin-left: 20px;
+  width: 80%;
+} */
+
+.Heading {
+  color: var(--blue-middle);
+  font-weight: 300;
+  letter-spacing: -0.0125em;
+  float: none;
+  margin-bottom: 15px;
+}
+
+.Logo {
+  margin-left: 80px;
+  width: 140px;
+  float: left;
+}
+
+.LoginName {
+  margin-right: 80px;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: var(--blue-brand-secondary);
+  padding: 5px 10px;
+  color: var(--white);
+  float: right;
+  min-width: 140px;
+  min-height: 56px;
+}
+.LoginName > p {
+  margin: 0px;
+}
+
+.nav-dropdown {
+  background-color: var(--white);
+  margin: 0 -10px;
+  margin-bottom: -10px;
+  color: var(--blue-brand-secondary);
+  width: 100%;
+  min-width: 280px;
+  display: inline-block;
+  border: 1px solid var(--blue-brand-secondary);
+  font-size: 14px;
+  font-weight: 400;
+}
+.nav-dropdown ul {
+  padding: 0;
+  border: none;
+  margin: 0;
+  padding-top: 8px;
+}
+
+.nav-dropdown li {
+  list-style: none;
+  padding: 10px 0px;
+}
+
+.nav-dropdown li:hover {
+  background-color: var(--gray-light-4);
+}
+
+.nav-dropdown > div {
+  float: left;
+  width: 50%;
+  border-right: 1px solid var(--gray-light-4);
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+/* .subMenuButton {
+  padding: 0;
+  background-color: var(--blue-brand-secondary);
+  border: none;
+} */
+
+.rightNav {
+  font-weight: bold;
+}
+
+/* .rightNav > span {
+  margin-left: -10px;
+} */
+
+.rightNav > svg {
+  float: right;
+}
+
+.rightNav > div {
+  position: absolute;
+  opacity: 1;
+  left: auto;
+  margin-top: 7px;
+  right: 80px;
+  padding: 0 10px;
+  z-index: 999;
+}
+
+.DropdownMenu {
+  position: fixed;
+}
+
+.MobileMainHeader {
+  display: none;
+}
+
+.MainHeader {
+  display: block;
+}
+
+.menuLine {
+  width: 18px;
+  height: 2px;
+  border-color: var(--blue-brand-secondary);
+  margin: 6px 3px;
+}
+
+.MobileMenu {
+  display: flex;
+}
+
+.mobileMenuBarCloseIcon {
+  display:none;
+}
+
+@media only screen and (max-width: 721px) {
+  .mobileMenuData {
+    background: var(--blue-brand-dark);
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+    color: var(--white);
+    overflow: hidden;
+    position: fixed;
+  }
+
+  .mobileMenuBarCloseIcon {
+    display: block;
+    padding: 10px;
+    font-weight: bold;
+    width: fit-content;
+  }
+  .rightNav > div {
+  }
+
+  .nav-dropdown {
+    position: absolute;
+    background-color: var(--white);
+    margin: 0 -10px;
+    margin-bottom: -10px;
+    color: var(--blue-brand-secondary);
+    width: 100%;
+    min-width: 280px;
+    display: inline-block;
+    border: 1px solid var(--blue-brand-secondary);
+    font-size: 14px;
+    margin: 0 auto;
+    width: 90%;
+    left: 6%;
+  }
+
+  .MobileMainHeader {
+    display: block;
+    height: 100%;
+    position: static;
+  }
+
+  .MainHeader {
+    display: none;
+  }
+
+  .MobileLogo {
+    width: 140px;
+    margin-left: 90px;
+  }
+
+  .MobileLoginDetail {
+    color: var(--white);
+    margin-bottom: 25px;
+    border-bottom: groove 1px var(--blue-light-2);
+    padding-bottom: 25px;
+    padding-left: 100px;
+  }
+
+  .MobileLoginDetail svg {
+    float: right;
+    margin-right: 70px;
+  }
+
+  .mobileMenuBarCloseIcon {
+    left: 10px;
+  }
+}

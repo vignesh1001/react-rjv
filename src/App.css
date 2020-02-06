@@ -1,0 +1,25 @@
+@import "https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap";
+@import "~sanitize.css";
+@import "~sanitize.css/forms.css";
+@import "styles/properties.css";
+@import "styles/page.css";
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font: 100%/1.5 "Roboto", sans-serif !important;
+
+  height: 100%;
+  position: relative;
+  overflow-y: auto;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
